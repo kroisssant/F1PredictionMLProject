@@ -73,7 +73,7 @@ class LinearRegressionModel:
         self._model = model
         self._artifacts = artifacts
         return result
-
+    @classmethod
     def load(cls, checkpoint_path=None, artifacts_path=None):
         checkpoint_path = checkpoint_path or LR_CHECKPOINT_PATH
         artifacts_path = artifacts_path or LR_ARTIFACTS_PATH

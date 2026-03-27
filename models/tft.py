@@ -342,7 +342,7 @@ class TFTModel:
             }, fh)
 
         return result
-
+    @classmethod
     def load(cls, checkpoint_path=None, artifacts_path=None):
         checkpoint_path = checkpoint_path or TFT_CHECKPOINT_PATH
         artifacts_path = artifacts_path or TFT_ARTIFACTS_PATH

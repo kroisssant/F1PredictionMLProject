@@ -253,6 +253,7 @@ class GRUModel:
 
         return result
 
+    @classmethod
     def load(cls, checkpoint_path=None, artifacts_path=None):
         checkpoint_path = checkpoint_path or GRU_CHECKPOINT_PATH
         artifacts_path = artifacts_path or GRU_ARTIFACTS_PATH
